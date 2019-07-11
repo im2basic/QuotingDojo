@@ -1,0 +1,8 @@
+<h1>Here are the awesome quotes!</h1>
+<ul>
+@foreach(var user in ViewBag.Users)
+{
+    
+    <li>@user["name"] @user["quote"]</li>
+}
+</ul>

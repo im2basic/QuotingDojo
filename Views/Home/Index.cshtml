@@ -1,0 +1,12 @@
+﻿@model QuotingDojo.Models.User
+<h1>Welcome to Quoting Dojo</h1>
+<form asp-action="Process" asp-controller="Home" method="post">
+    <span style="color: red;" asp-validation-for="Name"></span><br>
+    <label asp-for="Name"></label>
+    <input asp-for="Name"><br>
+    <span style="color: red;" asp-validation-for="Quote"></span><br>
+    <label asp-for="Quote"></label>
+    <textarea name="Quote" row="8" cols="50" placeholder="Your Quote"></textarea><br>
+    <button type="submit">Add my quote!</button>
+    </form>
+    <a href="/quotes"><button type="submit">Skip to quotes</button></a>
